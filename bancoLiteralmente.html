@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="oiMenina.ico" type="image/x-icon">
+    <title>Banco Xiiii</title>
+</head>
+<body>
+    <div class="divTeto">
+        <h1>Banco Xiiii</h1>
+    </div>
+
+    <div id="infoUser2" class="infoUser2">
+        
+
+        <button style="font-size: 18px; margin-top: 20px;" id="botaoSentar" onclick="botaoSentou()">CLIQUE PARA SENTAR LA ELE</button>
+        <button style="font-size: 18px; margin-top: 5px;" id="botaoSentar" onclick="botaoLevantar()">CLIQUE PARA LEVANTAR</button>
+    </div>
+    
+
+
+    <script>
+
+    var sentado = false
+    function botaoSentou(){
+        var elementBack = document.getElementById('infoUser2')
+
+        if (sentado == false){
+            elementBack.style.backgroundImage = "url('sentado.png')";
+            sentado = true
+        }
+        else{
+            console.log("o caba ja ta sentado")
+        }
+    }
+
+    function botaoLevantar(){
+        var elementBack = document.getElementById('infoUser2')
+
+        if (sentado == true){
+            elementBack.style.backgroundImage = "url('emPe.png')";
+            sentado = false
+        }
+        else{
+            console.log("o caba ja ta em Pé")
+        }
+    }
+    
+    </script>
+</body>
+</html>

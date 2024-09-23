@@ -74,3 +74,22 @@ input{
     font-style: normal;
 }
 
+
+.infoUser2{
+    border: 2px solid black;
+    max-width: 400px;
+    min-height: 600px;
+    align-content: center;
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(28, 69, 255);
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background: url(emPe.png);
+}
